@@ -1,0 +1,114 @@
+:root{
+    --dark-color:#000;
+    --brown-color:#F1592A;
+
+    --h2-font-size:24px;
+    --h5-font-size:16px;
+}
+
+#login{
+    height: 100vh;
+}
+
+#login .bg-login{
+    height: 100vh;
+    width: 100%;
+}
+
+#login .login-right{
+    width: 50%;
+}
+
+#login .top-form .logo-senimart{
+    color: #0F0F0F;
+    width: 30%;
+}
+
+#login .top-form h2{
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    margin-bottom: 29px;
+}
+
+#login .top-form .text-top{
+    font-size: var(--h5-font-size);
+    align-content: center;
+    font-weight: 300;
+    margin-bottom: 40px;
+    letter-spacing: -0.408px;
+}
+#login .top-form .text-bottom{
+    font-size: var(--h5-font-size);
+    font-weight:500;
+    letter-spacing: -0.408px;
+    margin-bottom: 60px;
+}
+
+#login form{
+    margin: 0 auto;
+}
+
+#login form .form-label{
+    font-weight: 500;
+}
+
+#login form .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 0.5px solid #000; /* Menambahkan border-bottom dengan warna hitam / background: transparent; / Menghapus background */
+    outline: none;
+    padding: 5px 0;
+    margin-bottom: 56px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+#login form button {
+    height: 57px;
+    width: 184px;
+    background-color: #12AEE3;
+    color: #FFF;
+    font-weight: 700;
+    border-color: #FFF;
+    border-radius: 28.5px;
+    -webkit-border-radius: 28.5px;
+    -moz-border-radius: 28.5px;
+    -ms-border-radius: 28.5px;
+    -o-border-radius: 28.5px;
+    margin-bottom: 53px;
+}
+
+#login form button:hover {
+    color: #12AEE3;
+    background-color: #FFF;
+    border-color: #12AEE3;
+    border-radius: 28.5px;
+    -webkit-border-radius: 28.5px;
+    -moz-border-radius: 28.5px;
+    -ms-border-radius: 28.5px;
+    -o-border-radius: 28.5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#login form span{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#login form span a{
+    text-decoration: none;
+    color: var(--brown-color);
+    font-weight: 700;
+}
+
+@media screen and  (max-width:720px) {
+    #login .login-right{
+        width: 100%;
+    }
+}

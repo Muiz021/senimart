@@ -1,0 +1,104 @@
+#jasa-kesenian{
+    width: 100%;
+}
+
+#jasa-kesenian h2{
+font-size: 24px;
+font-weight: 600;
+line-height: 14px; /* 58.333% */
+letter-spacing: -0.408px;
+margin-top: 86px;
+margin-bottom: 85px;
+}
+
+#jasa-kesenian img{
+    width: 100%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+#jasa-kesenian strong{
+    color: #000;
+font-size: 24px;
+font-weight: 600;
+line-height: 14px; /* 58.333% */
+letter-spacing: -0.408px;
+}
+
+
+hr {
+    width: 90%;
+    border: 2px solid #fff;
+    color: #fff;
+}
+label {
+    font-size: 24px;
+}
+
+.square-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    /* Menghilangkan border-radius */
+    width: 30px;
+    /* Sesuaikan ukuran lebar */
+    height: 30px;
+    /* Sesuaikan ukuran tinggi */
+    border: 2px solid #fff;
+    background: #fff;
+    border-radius: 10px;
+    /* Sesuaikan warna border */
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+    /* Sesuaikan margin jika diperlukan */
+}
+
+.square-radio:checked {
+    background-color: orange;
+    /* Sesuaikan warna latar belakang saat dipilih */
+}
+
+@media screen and (max-width: 720px) {
+    #jasa-kesenian h2 {
+        margin-left: 5px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    hr {
+        width: 100%;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    label {
+        font-size: 16px;
+    }
+
+    .square-radio {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        margin-right: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .square-radio:checked {
+        background-color: orange;
+    }
+}

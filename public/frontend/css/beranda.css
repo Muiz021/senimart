@@ -1,0 +1,47 @@
+#hero form {
+    margin-top: 27px;
+    margin-bottom: 64px;
+}
+
+#hero form {
+    height: 58px;
+    flex-shrink: 0;
+}
+
+#hero form span {
+    color: #12aee3;
+}
+
+#hero form input {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px; /* 110% */
+    letter-spacing: -0.408px;
+}
+
+#hero img {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#menu{
+    margin-top: 140px;
+    margin-bottom: 120px;
+}
+
+@media screen and  (max-width:720px) {
+
+    #hero form {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #menu{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}

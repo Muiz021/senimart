@@ -1,0 +1,147 @@
+#produk-kesenian .top-text {
+    margin-top: 64px;
+    margin-bottom: 79px;
+}
+
+#produk-kesenian .top-text svg {
+    margin-right: 34px;
+}
+
+#produk-kesenian .top-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 22px; /* 91.667% */
+    letter-spacing: -0.408px;
+}
+
+#produk-kesenian .title {
+    margin-top: 95px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 49.5px; /* 190.385% */
+    letter-spacing: -0.408px;
+}
+
+#produk-kesenian .hr1 {
+    margin-top: 28px;
+}
+
+#produk-kesenian .hr2 {
+    margin-top: 65px;
+}
+
+#produk-kesenian .title-2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 49.5px; /* 190.385% */
+    letter-spacing: -0.408px;
+    margin-top: 63px;
+}
+
+#produk-kesenian p {
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 39px; /* 162.5% */
+    letter-spacing: -0.408px;
+}
+
+#produk-kesenian .text-spesifikasi {
+    margin-top: 20px;
+}
+
+#produk-kesenian h5 {
+    width: 15%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 39.5px; /* 197.5% */
+    letter-spacing: -0.408px;
+    margin-bottom: 0;
+}
+
+#produk-kesenian .text-seniman svg {
+    width: 21px;
+    height: 21px;
+    color: #fec20e;
+    margin-top: 11px;
+}
+
+@media screen and (max-width: 720px) {
+    #produk-kesenian .top-text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #produk-kesenian .top-text svg {
+        margin-right: 10px;
+        width: 60%;
+    }
+
+    #produk-kesenian .top-text h2 {
+        margin-right: 34px;
+        font-size: 18px;
+    }
+
+    #produk-kesenian .title {
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 49.5px; /* 190.385% */
+        letter-spacing: -0.408px;
+    }
+
+    #produk-kesenian .hr1 {
+        margin-top: 14px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #produk-kesenian .hr2 {
+        margin-top: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #produk-kesenian .title-2 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 49.5px; /* 190.385% */
+        letter-spacing: -0.408px;
+        margin-top: 10px;
+    }
+
+    #produk-kesenian p {
+        text-align: justify;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 39px; /* 162.5% */
+        letter-spacing: -0.408px;
+    }
+
+    #produk-kesenian .text-spesifikasi {
+        margin-top: 20px;
+    }
+
+    #produk-kesenian h5 {
+        width: 25%;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 39.5px; /* 197.5% */
+        letter-spacing: -0.408px;
+        margin-bottom: 0;
+    }
+
+    #produk-kesenian span {
+        font-size: 14px;
+        line-height: 39.5px; /* 197.5% */
+        letter-spacing: -0.408px;
+        margin-bottom: 0;
+    }
+
+    #produk-kesenian .text-seniman svg {
+        width: 16px;
+        height: 16px;
+        color: #fec20e;
+        margin-top: 0;
+    }
+}
