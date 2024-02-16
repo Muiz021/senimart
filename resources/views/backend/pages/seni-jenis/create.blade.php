@@ -1,9 +1,9 @@
 @extends('backend.base')
 
-@section('title', 'tambah j')
+@section('title', 'tambah jenis seni')
 @section('content')
     <div class="container-xxl flex-grow-1 container-p-y">
-        <h4 class="fw-bold py-3 mb-4">Tari Kesenian</h4>
+        <h4 class="fw-bold py-3 mb-4">Jenis Seni</h4>
 
         <form enctype="multipart/form-data" action="{{ route('jenis-seni.store') }}" method="post">
             @csrf
