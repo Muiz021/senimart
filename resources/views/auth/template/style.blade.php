@@ -6,4 +6,8 @@
 <link rel="stylesheet" href="{{asset('auth/css/style.css')}}">
 {{-- end css --}}
 
+{{-- icon --}}
+<link rel="icon" type="image/x-icon" href="{{asset('frontend\img\logo-senimart.png')}}" />
+{{-- end icon --}}
+
 
