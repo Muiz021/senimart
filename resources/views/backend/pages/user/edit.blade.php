@@ -32,15 +32,6 @@
                     <input type="text" class="form-control" value="{{ $user->nomor_ponsel }}" name="nomor_ponsel" required>
                 </div>
             </div>
-            <div class="row">
-                <div class="col mb-3">
-                    <label class="form-label">Status</label>
-                    <select class="form-select" name="status" required>
-                        <option value="1" {{ $user->status == 1 ? 'selected' : '' }}>diterima</option>
-                        <option value="0" {{ $user->status == 0 ? 'selected' : '' }}>belum diterima</option>
-                    </select>
-                </div>
-            </div>
             <a href="{{ route('user.index') }}" class="btn btn-secondary">Kembali</a>
             <button type="submit" class="btn btn-primary">Kirim</button>
         </form>

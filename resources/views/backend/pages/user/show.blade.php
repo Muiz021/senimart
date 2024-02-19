@@ -23,13 +23,6 @@
                 <input type="text" class="form-control" value="{{ $user->nomor_ponsel }}" readonly>
             </div>
         </div>
-        <div class="row">
-            <div class="col mb-3">
-                <label class="form-label">Status</label>
-                <input type="text" class="form-control" value="{{ $user->status == 1 ? 'diterima' : 'belum diterima' }}"
-                    readonly>
-            </div>
-        </div>
 
         <a href="{{ route('user.index') }}" class="btn btn-secondary">Kembali</a>
     </div>

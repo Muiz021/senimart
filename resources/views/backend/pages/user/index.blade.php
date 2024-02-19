@@ -50,16 +50,6 @@
                                                     <span class="d-none d-sm-inline-block">Delete</span></span>
                                             </button>
                                         </form>
-                                        @if ($item->status == 0)
-                                            <form action="{{ route('user.update_status', $item->id) }}" method="post">
-                                                @csrf
-                                                @method('put')
-                                                <button type="submit" class="btn btn-secondary btn-sm"><span><i
-                                                            class='bx bxs-right-arrow-circle me-sm-2'></i>
-                                                        <span class="d-none d-sm-inline-block">Konfirmasi</span></span>
-                                                </button>
-                                            </form>
-                                        @endif
                                     </td>
                                 </tr>
                             @endforeach

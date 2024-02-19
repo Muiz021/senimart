@@ -63,7 +63,6 @@ class UserController extends Controller
             'nama' => $request->nama,
             'username' => $request->username,
             'nomor_ponsel' => $request->nomor_ponsel,
-            'status' => $request->status,
         ];
         if ($request->filled('password')) {
             $userData['password'] = Hash::make($request->password);
@@ -86,13 +85,5 @@ class UserController extends Controller
         return redirect()->route('user.index');
     }
 
-    public function update_status(string $id)
-    {
-        $user = User::find($id);
-        $user->update([
-            'status' => 1
-        ]);
-        Alert::success("Berhasil", "konfirmasi user");
-        return redirect()->route('user.index');
-    }
+
 }

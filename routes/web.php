@@ -80,7 +80,6 @@ Route::prefix('backend')->middleware(['auth','OnlyAdmin'])->group(function(){
 
     //  user
     Route::resource('user',UserController::class)->except('create','store');
-    Route::put('user/update_status/{id}',[UserController::class,'update_status'])->name('user.update_status');
 
     // jenis seni
     Route::resource('jenis-seni',BackendSeniJenisController::class);

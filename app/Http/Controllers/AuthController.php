@@ -26,7 +26,7 @@ class AuthController extends Controller
                 Alert::success(Auth::user()->nama, "berhasil login");
                 return redirect()->route('dashboard');
             } else
-            if (Auth::user()->roles === 'pelanggan' && Auth::user()->status == true) {
+            if (Auth::user()->roles === 'pelanggan') {
                 Alert::success(Auth::user()->nama, "berhasil login");
                 return redirect()->route('beranda');
             } else {
@@ -51,7 +51,7 @@ class AuthController extends Controller
 
         User::create($data);
 
-        Alert::success("Berhasil", "silahkan tunggu konfirmasi dari admin");
+        Alert::success("Berhasil", "kamu berhasil registrasi");
         return redirect()->route('login');
     }
 
