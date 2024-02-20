@@ -71,7 +71,7 @@ class ProdukController extends Controller
         $produkNama = urlencode($pemesanan_produk->produk->nama);
         $jumlahProduk = urlencode($pemesanan_produk->jumlah_produk);
 
-        $url = "https://wa.me/+6281343671284?text=Saya%20ingin%20memesan%20produk%20{$produkNama}%20pada%20{$tanggal_pesan}%20sejumlah%20{$jumlahProduk}";
+        $url = "https://wa.me/+6282398778349?text=Saya%20ingin%20memesan%20produk%20{$produkNama}%20pada%20{$tanggal_pesan}%20sejumlah%20{$jumlahProduk}";
 
         return redirect($url);
     }

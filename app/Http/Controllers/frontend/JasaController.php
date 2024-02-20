@@ -73,7 +73,7 @@ class JasaController extends Controller
         $tema = urlencode($pemesanan_jasa->tema);
         $lokasi = urlencode($pemesanan_jasa->lokasi);
 
-        $url = "https://wa.me/+6281343671284?text=Saya%20ingin%20memesan%20jasa%20{$jasaNama}%20dengan%20tema%20{$tema}%20pada%20{$tanggal_tampil}%20jam%20{$jam}%20di%20tempat%20{$lokasi}";
+        $url = "https://wa.me/+6282398778349?text=Saya%20ingin%20memesan%20jasa%20{$jasaNama}%20dengan%20tema%20{$tema}%20pada%20{$tanggal_tampil}%20jam%20{$jam}%20di%20tempat%20{$lokasi}";
 
         return redirect($url);
     }
