@@ -62,14 +62,14 @@ class JasaController extends Controller
     public function update_pemesanan_jasa(Request $request, $id)
     {
         $pemesanan_jasa = PemesananJasa::find($id);
+        $pesan = Pesan::where('tipe','pemesanan jasa')->first();
+        $tentang_kami = TentangKami::first();
 
         $data = $request->all();
         $data['status'] = 'proses';
+        $data['pesan_id'] = $pesan->id;
 
         $pemesanan_jasa->update($data);
-
-        $pesan = Pesan::where('tipe','pemesanan jasa')->first();
-        $tentang_kami = TentangKami::first();
 
         $url = "https://wa.me/{$tentang_kami->nomor_wa}?text={$pesan->deskripsi}";
 

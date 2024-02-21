@@ -63,13 +63,14 @@ class ProdukController extends Controller
     public function update_pemesanan_produk(Request $request, $id)
     {
         $pemesanan_produk = PemesananProduk::find($id);
+        $pesan = Pesan::where('tipe','pemesanan produk')->first();
+        $tentang_kami = TentangKami::first();
 
         $data = $request->all();
         $data['status'] = 'proses';
-        $pemesanan_produk->update($data);
+        $data['pesan_id'] = $pesan->id;
 
-        $pesan = Pesan::where('tipe','pemesanan produk')->first();
-        $tentang_kami = TentangKami::first();
+        $pemesanan_produk->update($data);
 
         $url = "https://wa.me/{$tentang_kami->nomor_wa}?text={$pesan->deskripsi}";
 
