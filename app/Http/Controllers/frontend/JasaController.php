@@ -4,10 +4,12 @@ namespace App\Http\Controllers\frontend;
 
 use Carbon\Carbon;
 use App\Models\Jasa;
+use App\Models\Pesan;
+use App\Models\JenisSeni;
+use App\Models\TentangKami;
 use Illuminate\Http\Request;
 use App\Models\PemesananJasa;
 use App\Http\Controllers\Controller;
-use App\Models\JenisSeni;
 use Illuminate\Support\Facades\Response;
 
 class JasaController extends Controller
@@ -66,14 +68,10 @@ class JasaController extends Controller
 
         $pemesanan_jasa->update($data);
 
-        // mengirim pesan pada admin
-        $tanggal_tampil = Carbon::parse($pemesanan_jasa->tanggal_tampil)->isoFormat('dddd, DD MMMM YYYY');
-        $jam = Carbon::parse($pemesanan_jasa->jam)->isoFormat('HH:mm');
-        $jasaNama = urlencode($pemesanan_jasa->jasa->nama);
-        $tema = urlencode($pemesanan_jasa->tema);
-        $lokasi = urlencode($pemesanan_jasa->lokasi);
+        $pesan = Pesan::where('tipe','pemesanan jasa')->first();
+        $tentang_kami = TentangKami::first();
 
-        $url = "https://wa.me/+6282398778349?text=Saya%20ingin%20memesan%20jasa%20{$jasaNama}%20dengan%20tema%20{$tema}%20pada%20{$tanggal_tampil}%20jam%20{$jam}%20di%20tempat%20{$lokasi}";
+        $url = "https://wa.me/{$tentang_kami->nomor_wa}?text={$pesan->deskripsi}";
 
         return redirect($url);
     }

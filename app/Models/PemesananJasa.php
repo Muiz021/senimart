@@ -15,4 +15,10 @@ class PemesananJasa extends Model
      {
         return $this->belongsTo(Jasa::class);
      }
+
+     public function pesan()
+     {
+         return $this->belongsTo(Pesan::class);
+     }
+
 }

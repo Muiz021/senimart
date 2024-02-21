@@ -9,6 +9,8 @@ use App\Http\Controllers\frontend\ProdukController;
 use App\Http\Controllers\frontend\RiwayatController;
 use App\Http\Controllers\backend\PemesananJasaController;
 use App\Http\Controllers\backend\PemesananProdukController;
+use App\Http\Controllers\backend\PesanController;
+use App\Http\Controllers\backend\TentangKamiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -95,6 +97,12 @@ Route::prefix('backend')->middleware(['auth','OnlyAdmin'])->group(function(){
 
      //  pemesanan produk
      Route::resource('pemesanan-produk',PemesananProdukController::class)->except('create','store');
+
+    //  pesan
+    Route::resource('pesan',PesanController::class)->except('edit','show');
+
+    //  tentang kami
+    Route::resource('tentang-kami',TentangKamiController::class)->except('edit','show');
     });
 
 

@@ -121,5 +121,20 @@
             <div data-i18n="Analytics">Pemesanan Produk</div>
         </a>
     </li>
+    <li class="menu-header small text-uppercase">
+        <span class="menu-header-text">Pengaturan Web</span>
+    </li>
+    <li class="menu-item {{request()->is('backend/pesan*') ? 'active' : '' }}">
+        <a href="{{route('pesan.index')}}" class="menu-link">
+            <i class='menu-icon bx bxs-cog'></i>
+            <div data-i18n="Analytics">Pesan</div>
+        </a>
+    </li>
+    <li class="menu-item {{request()->is('backend/tentang-kami*') ? 'active' : '' }}">
+        <a href="{{route('tentang-kami.index')}}" class="menu-link">
+            <i class='menu-icon bx bxs-cog'></i>
+            <div data-i18n="Analytics">Tentang Kami</div>
+        </a>
+    </li>
     </ul>
   </aside>

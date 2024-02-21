@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\frontend;
 
 use Carbon\Carbon;
+use App\Models\Pesan;
 use App\Models\Produk;
+use App\Models\JenisSeni;
 use Illuminate\Http\Request;
 use App\Models\PemesananProduk;
 use App\Http\Controllers\Controller;
-use App\Models\JenisSeni;
+use App\Models\TentangKami;
 use Illuminate\Support\Facades\Response;
 
 class ProdukController extends Controller
@@ -66,12 +68,10 @@ class ProdukController extends Controller
         $data['status'] = 'proses';
         $pemesanan_produk->update($data);
 
-        // mengirim pesan pada admin
-        $tanggal_pesan = Carbon::parse($pemesanan_produk->tanggal_pesan)->isoFormat('dddd, DD MMMM YYYY');
-        $produkNama = urlencode($pemesanan_produk->produk->nama);
-        $jumlahProduk = urlencode($pemesanan_produk->jumlah_produk);
+        $pesan = Pesan::where('tipe','pemesanan produk')->first();
+        $tentang_kami = TentangKami::first();
 
-        $url = "https://wa.me/+6282398778349?text=Saya%20ingin%20memesan%20produk%20{$produkNama}%20pada%20{$tanggal_pesan}%20sejumlah%20{$jumlahProduk}";
+        $url = "https://wa.me/{$tentang_kami->nomor_wa}?text={$pesan->deskripsi}";
 
         return redirect($url);
     }

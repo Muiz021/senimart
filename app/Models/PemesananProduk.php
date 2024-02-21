@@ -15,4 +15,9 @@ class PemesananProduk extends Model
     {
        return $this->belongsTo(Produk::class);
     }
+
+    public function pesan()
+    {
+        return $this->belongsTo(Pesan::class);
+    }
 }
